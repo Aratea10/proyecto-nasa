@@ -1,79 +1,97 @@
 .login-body {
-    background-image: url('../img/fondonasa.jpg');
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
+  background-image: url("../img/fondonasa.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .nasa-logo {
-    width: 400px;
-    height: auto;
-    margin-bottom: 1rem;
+  width: 400px;
+  height: auto;
+  margin-bottom: 1rem;
 }
 
 .login-container {
-    background: rgb(26 0 59 / 44%);
-    padding: 2rem;
-    border-radius: 10px;
-    width: 90%;
-    max-width: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-sizing: border-box;
+  background: rgb(26 0 59 / 44%);
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 .login-form h2 {
-    color: white;
-    text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-    width: 100%;
-    padding: 0 1rem;
-    box-sizing: border-box;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
 
 .form-group {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 250px;
-    box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 250px;
+  width: 100%;
+  box-sizing: border-box;
 }
 .form-group input {
-    width: 100%;
-    max-width: 300px;
-    padding: 0.8rem;
-    border: none;
-    border-radius: 5px;
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
-    margin-bottom: 1rem;
-    box-sizing: border-box;
+  width: 100%;
+  max-width: 300px;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
 }
 
 .form-group input::placeholder {
-    font-family: 'Century Gothic', CenturyGothic, sans-serif;
-    color: rgba(255, 255, 255, 0.7);
+  font-family: "Century Gothic", CenturyGothic, sans-serif;
+  color: rgba(255, 255, 255, 0.7);
 }
 
-.login-form p { color: white; text-align: center; margin-top: 1rem;}
-.login-form a { color: #4C9AFF; text-decoration: none;}
+.login-form p {
+  color: white;
+  text-align: center;
+  margin-top: 1rem;
+}
+.login-form a {
+  color: #4c9aff;
+  text-decoration: none;
+}
 
 .error {
-    color: #ff000096;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 15px;
+  color: #ff000096;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 15px;
 }
 .success {
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 15px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+    .nasa-logo {
+        width: 250px;
+    }
+
+    .login-container {
+        max-width: 300px;
+    }
 }

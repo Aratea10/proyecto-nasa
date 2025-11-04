@@ -1,184 +1,236 @@
 .dashboard-body {
-    color: rgba(255, 255, 255, 0.801);
-    font-family: 'Century Gothic', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url('../img/fondo.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    min-height: 100vh;
-    overflow-x: hidden;
+  color: rgba(255, 255, 255, 0.801);
+  font-family: "Century Gothic", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("../img/fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 2rem;
-    background: rgb(64 0 105 / 26%);
-    position: relative;
-    z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgb(64 0 105 / 26%);
+  position: relative;
+  z-index: 1;
 }
-.nasa-header-logo { height: 100px; margin: 0 auto; }
+.nasa-header-logo {
+  height: 100px;
+  margin: 0 auto;
+}
 .user-info {
-    position: absolute;
-    right: 2rem;
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    color: white;
+  position: absolute;
+  right: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  color: white;
 }
-.hud-panel {
-    background: rgb(26 0 59 / 44%);
-    border-radius: 10px;
+
+.hud-container {
+    display: flex;
+    gap: 2rem;
     padding: 2rem;
-    box-shadow: 0 0 20px rgba(0, 0, 255, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    overflow-y: visible;
-    height: 100%;
-    position: relative;
-    z-index: 1;
+    align-items: flex-start;
+}
+
+.hud-panel {
+  background: rgb(26 0 59 / 44%);
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(0, 0, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow-y: visible;
+  height: 100%;
+  position: relative;
+  z-index: 1;
 }
 .hud-panel h2 {
-    color: #EFB6C8;
-    border-bottom: 1px solid rgba(0, 150, 255, 0.2);
-    padding-bottom: 0.5rem;
-    margin-bottom: 1rem;
-    text-align: center;
+  color: #efb6c8;
+  border-bottom: 1px solid rgba(0, 150, 255, 0.2);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 .api-info {
-    background: rgba(255, 0, 0, 0.2);
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background 0.3 ease;
+  background: rgba(255, 0, 0, 0.2);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
 }
-.logout.btn:hover { background: rgba(255, 0, 0, 0.4); }
+.logout.btn:hover {
+  background: rgba(255, 0, 0, 0.4);
+}
 
-.apod-content { display: flex; flex-direction: column; align-items: center; padding: 0 2rem;}
+.apod-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2rem;
+}
 .apod-content img {
-    max-width: 90%;
-    height: auto;
-    border-radius: 8px;
-    margin: 0 auto;
-    display: block;
+  max-width: 90%;
+  height: auto;
+  border-radius: 8px;
+  margin: 0 auto;
+  display: block;
 }
 .apod-content h3 {
-    align-self: flex-start;
-    margin: 0;
-    padding: 0 0 1rem 0;
-    width: 100%;
-    text-align: left;
+  align-self: flex-start;
+  margin: 0;
+  padding: 0 0 1rem 0;
+  width: 100%;
+  text-align: left;
 }
-.apod-content p { text-align: justify; line-height: 1.6; margin: 1.5rem 0; }
+.apod-content p {
+  text-align: justify;
+  line-height: 1.6;
+  margin: 1.5rem 0;
+}
 
 .download-btn {
-    display: block;
-    background: #8174A0;
-    color: white;
-    padding: 0.8rem 1.5rem;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background 0.3s ease;
-    width: fit-content;
-    margin: 1rem auto;
+  display: block;
+  background: #8174a0;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  width: fit-content;
+  margin: 1rem auto;
 }
-.download-btn:hover { background: #555; }
+.download-btn:hover {
+  background: #555;
+}
 
 .date-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 .date-wrapper {
-    background: rgb(26 0 59 / 44%);
-    padding: 5px 10px;
-    border-radius: 25px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    margin: 0.5rem 0;
+  background: rgb(26 0 59 / 44%);
+  padding: 5px 10px;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 0.5rem 0;
 }
 #dateSelector {
-    background: rgb(26 0 59 / 44%);
-    color: white;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 25px;
-    font-family: 'Century Gothic', sans-serif;
-    cursor: pointer; 
-    transition: all 0.3s ease;
-    text-align: center;
+  background: rgb(26 0 59 / 44%);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+  font-family: "Century Gothic", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
 }
-#dateSelector:hover { background: rgb(26 0 59 / 60%); border-color: rgba(255, 255, 255, 0.3);}
-#dateSelector:focus { outline: none; box-shadow: 0 0 0 2px rgba(76, 154, 255, 0.5);}
-#dateSelector::-webkit-calendar-picker-indicator { filter: invert(1); opacity: 0.7; cursor: pointer; }
-#dateSelector::webkit-calendar-picker-indicator:hover { opacity: 1; }
+#dateSelector:hover {
+  background: rgb(26 0 59 / 60%);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+#dateSelector:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(76, 154, 255, 0.5);
+}
+#dateSelector::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  opacity: 0.7;
+  cursor: pointer;
+}
+#dateSelector::webkit-calendar-picker-indicator:hover {
+  opacity: 1;
+}
 
 input[type="date"] {
-    background: rgb(26 0 59 / 44%);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 20px;
-    color: white;
-    padding: 8px 15px;
-    font-family: 'Century Gothic', sans-serif;
-    cursor: pointer;
-    width: auto;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+  background: rgb(26 0 59 / 44%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  color: white;
+  padding: 8px 15px;
+  font-family: "Century Gothic", sans-serif;
+  cursor: pointer;
+  width: auto;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 input[type="date"]::-webkit-calendar-picker-indicator {
-	filter: invert(1);
-	opacity: 0.8;
-	cursor: pointer;
-	background-color: transparent;
-	padding: 5px;
-	display: none;
+  filter: invert(1);
+  opacity: 0.8;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 5px;
+  display: none;
 }
 .date-wrapper input[type="date"] {
-	user-select: none;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
-.photo-panel { display: flex; flex-direction: column; padding: 0; }
-.photo-title { padding: 0 0 1rem 0; }
+.photo-panel {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+.photo-title {
+  padding: 0 0 1rem 0;
+}
 
-.hazardous-asteroids h3 { color: #FFD2A0; margin-bottom: 1.5rem; text-align: center; }
+.hazardous-asteroids h3 {
+  color: #ffd2a0;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
 .hazardous-asteroid {
-	background: rgb(26 0 59 / 44%);
-	border-radius: 10px;
-	padding: 1.5rem;
-	margin-bottom: 1.5rem;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-	border: 1px solid rgba(255, 255, 255, 0.1);
-	text-align: right;
+  background: rgb(26 0 59 / 44%);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: right;
 }
 .hazardous-asteroid div {
-	color: #dfc0e1;
-	font-weight: bold;
-	border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-	width: 100%;
-	padding-bottom: 0.5rem;
-	margin-bottom: 0.5rem;
-	text-align: center;
+  color: #dfc0e1;
+  font-weight: bold;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
 }
 .hazardous-asteroid p {
-	font-size: 0.85rem;
-	justify-content: center;
-	margin: 0.5rem 0;
-	color: white;
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
+  font-size: 0.85rem;
+  justify-content: center;
+  margin: 0.5rem 0;
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 .hazardous-asteroid p span {
-	text-align: left;
-	font-weight: bold;
-	width: auto;
+  text-align: left;
+  font-weight: bold;
+  width: auto;
+}
+
+@media (max-width: 768px) {
+    .hud-container {
+        flex-direction: column;
+    }
 }
