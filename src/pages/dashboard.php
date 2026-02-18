@@ -58,8 +58,7 @@ try {
 } catch (Exception $e) {
 }
 
-$api_headers = get_headers($apod_url, 1);
-$remaining_calls = $api_headers['X-RateLimit-Remaining'] ?? 'N/A';
+$remaining_calls = 'N/A';
 
 ?>
 <!DOCTYPE html>
