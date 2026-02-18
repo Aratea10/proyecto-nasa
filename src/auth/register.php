@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <head>
     <meta charset="UTF-8">
     <title>NASA - Registro</title>
-    <link rel="stylesheet" href="../public/assets/css/login.css">
+    <link rel="stylesheet" href="../../public/assets/css/login.css">
 </head>
 
 <body class="login-body">
@@ -63,7 +63,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <input type="text" name="token" placeholder="Token NASA" required>
             </div>
             <button type="submit" class="stellar-button">Crear cuenta</button>
-            <button type="button" class="back-button stellar-button" onclick="window.location.href='../../public/index.php'">Volver</button>
+            <button type="button" class="back-button stellar-button"
+                onclick="window.location.href='../../public/index.php'">Volver</button>
         </form>
     </div>
 </body>
