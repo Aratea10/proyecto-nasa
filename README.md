@@ -1,7 +1,7 @@
 # 🌌 Proyecto NASA - Explorador de Datos Espaciales
 
 <div align="center">
-  
+
 [![PHP](https://img.shields.io/badge/php-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net/)
 [![phpMyAdmin](https://img.shields.io/badge/phpmyadmin-6C78AF?style=for-the-badge&logo=phpmyadmin&logoColor=white)](https://www.phpmyadmin.net/)
 [![XAMPP](https://img.shields.io/badge/XAMPP-FB7A24?style=for-the-badge&logo=xampp&logoColor=white)](https://www.apachefriends.org/es/index.html) <br>
@@ -36,7 +36,7 @@ Este proyecto demuestra el uso de tecnologías web estándar (HTML, CSS y JavaSc
 - **Foto Astronómica del Día (APOD)**
   Muestra la imagen o vídeo destacado por la NASA con título, fecha y explicación científica.
 
-- **Raestreador de Asteroides Cercanos (NEOs)**
+- **Rastreador de Asteroides Cercanos (NEOs)**
   Lista asteroides próximos a la Tierra con:
   - Nombre y fecha de aproximación.
   - Distancia mínima (km y unidades astronómicas).
