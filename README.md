@@ -12,9 +12,10 @@
 
 </div>
 
-Aplicación web desarrollada como **proyecto práctico del módulo de *Implantación de Aplicaciones Web*** del **Ciclo Formativo de Grado Superior en ASIR** (Administración de Sistemas Informáticos en Red).
+Aplicación web desarrollada como **proyecto práctico del módulo de _Implantación de Aplicaciones Web_** del **Ciclo Formativo de Grado Superior en ASIR** (Administración de Sistemas Informáticos en Red).
 
 Permite interactuar con APIs públicas de la **NASA** para:
+
 - Consultar la **Foto Astronómica del Día (APOD)**
 - Rastrear **asteroides cercanos a la Tierra (NEOs)**
 - Gestionar de forma segura una **clave de API personalizada** usando `localStorage`
@@ -24,6 +25,7 @@ Este proyecto demuestra el uso de tecnologías web estándar (HTML, CSS y JavaSc
 ---
 
 ## 🎯 Objetivos del Proyecto (ASIR - Implantación de Aplicaciones Web)
+
 - Aplicar conocimientos de **desarrollo front-end sin frameworks**.
 - Practicar el consumo de **APIs REST públicas**.
 - Implementar el **almacenamiento local seguro** de credenciales sensibles (clave API).
@@ -33,6 +35,7 @@ Este proyecto demuestra el uso de tecnologías web estándar (HTML, CSS y JavaSc
 ---
 
 ## 🚀 Funcionalidades
+
 - **Foto Astronómica del Día (APOD)**
   Muestra la imagen o vídeo destacado por la NASA con título, fecha y explicación científica.
 
@@ -44,16 +47,14 @@ Este proyecto demuestra el uso de tecnologías web estándar (HTML, CSS y JavaSc
   - Velocidad relativa y clasificación de riesgo.
 
 - **Gestión de Clave API Segura**
-  - HTML5
-  - CSS3 (diseño responsivo)
-  - JavaScript vanilla (ES6+)
-  - APIs REST de la NASA
+  Permite al usuario guardar su clave API en `localStorage` para reutilizarla en futuras sesiones sin tener que introducirla cada vez.
 
 ---
 
 ## 🌐 APIs de la NASA Utilizadas
+
 1. **APOD (Astronomy Picture of the Day)**
-    https://apod.nasa.gov/apod/astropix.html
+   https://apod.nasa.gov/apod/astropix.html
 2. **NEO (Near Earth Object) Feed**
    https://data.nasa.gov/dataset/asteroids-neows-api
 
@@ -63,7 +64,19 @@ Este proyecto demuestra el uso de tecnologías web estándar (HTML, CSS y JavaSc
 
 ---
 
+## 🔧 Tecnologías utilizadas
+
+- **PHP** — Backend y lógica del servidor
+- **MySQL** + **phpMyAdmin** — Base de datos y gestión
+- **XAMPP** — Servidor local de desarrollo
+- **HTML5** + **CSS3** — Estructura y diseño responsivo
+- **JavaScript** (ES6+) — Peticiones async a las APIs
+- **APIs REST de la NASA** — APOD y NEO Feed
+
+---
+
 ## 📁 Estructura del Proyecto
+
 ```text
 proyecto-nasa/
 ├── 📁 database
@@ -95,18 +108,25 @@ proyecto-nasa/
 ---
 
 ## 🛠️ Instrucciones de Uso
+
 1. **Obtén tu clave API** en [https://api.nasa.gov/](https://api.nasa.gov/)
 2. **Clona el repositorio**:
    ```bash
    git clone https://github.com/Aratea10/proyecto-nasa.git
    ```
-3. Abre `index.html`en tu navegador (se recomienda usar Live Server en VS Code).
+3. Configura XAMPP y abre el proyecto en `http://localhost/proyecto-nasa/public/assets/index.php`
 4. Ingresa tu clave la primera vez. Se guardará localmente y se reutilizará en sesiones futuras.
 
 ---
 
-## Contexto Académico
+## 🎓 Contexto Académico
+
 - Ciclo Formativo: Grado Superior en ASIR (Administración de Sistemas Informáticos en Red)
-- Módulo: *Implantación de Aplicaciones Web*
+- Módulo: _Implantación de Aplicaciones Web_
 - Curso: 2024-2025
-- Autora: Sara Gallego Méndez
+
+---
+
+## 👩‍💻 Autora
+
+**Sara Gallego Méndez** — Estudiante del Ciclo Superior en ASIR.
